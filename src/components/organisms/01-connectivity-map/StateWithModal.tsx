@@ -44,7 +44,7 @@ const StateWithModal: React.FC<StateWithModalProps> = ({ href, path, circle, tex
         </text>
       </a>
 
-      <DialogModal isOpen={isToggled} onClose={handleToggle} onConfirm={handleToggle} />
+      <DialogModal isOpen={isToggled} onClose={handleToggle} onConfirm={handleToggle} href={href}/>
 {/*
       <div
         className={`${isToggled ? 'absolute z-50' : 'hidden'} top-0 left-0 w-full h-full bg-gray-500 opacity-50 `}

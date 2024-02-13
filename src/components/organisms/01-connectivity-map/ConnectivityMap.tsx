@@ -2,7 +2,8 @@
 
 import React from 'react'
 import br_states from '@/data/br_states.json'
-import DialogModal from '@/components/molecules/01-dialog-modal/DialogModal'
+import MapLoader from '@/assets/map_loader.avif'
+import MapLoader2 from '@/assets/map_loader_2.webp'
 import StateWithModal from './StateWithModal'
 
 const ConnectivityMap: React.FC = () => {
@@ -10,6 +11,14 @@ const ConnectivityMap: React.FC = () => {
 
   return (
     <div>
+      {/* <img src={MapLoader2} alt="Mapa Conectividade Brasil" /> */}
+      <picture>
+        <source srcSet="/src/assets/map_loader_2.webp" type="image/webp" />
+  {/* <source srcset="imagem.jpg" type="image/jpeg">
+  <img src="imagem.jpg" alt="Descrição da imagem"> */}
+      </picture>
+
+
       <svg
         version="1.1"
         id="svg-map"
