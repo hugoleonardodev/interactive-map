@@ -3,6 +3,11 @@ import React from 'react'
 import classNames from 'classnames'
 import Image, { type StaticImageData } from 'next/image'
 
+// Join conditional styles
+// export const classNames = (...classes: string[]): string => {
+//   return classes.filter(Boolean).join(' ')
+// }
+
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   type?: 'button' | 'submit' | 'reset'
   rounded?: boolean
